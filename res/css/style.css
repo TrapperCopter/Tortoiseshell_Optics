@@ -8,10 +8,7 @@ body {
 /* HEADER-START */
 .container {
   width: 960px;
-
   margin: auto;
-
-
 }
 .header {
   background-color: cadetblue;
@@ -37,6 +34,9 @@ body {
 .nav span {
 padding: 0 2rem 0 0;
 }
+.navm {
+  display: none;
+}
 /* HEADER-END */
 
 /* SLIDER */
@@ -60,7 +60,7 @@ padding: 0 2rem 0 0;
 }
 /* SLIDER-END */
 
-/* FEATRUES */
+/* FEATURES */
 .features {
   margin: auto;
   height: 8rem;
@@ -104,10 +104,18 @@ padding: 0 2rem 0 0;
   height: auto;
   width: 5rem;
 }
+/* FEATURES-END */
+
+/* TEXTBOXES */
+.textbox-flex {
+  width: 100%;
+ display: flex;
+ justify-content: center;
+}
 
 .textbox {
   display: inline-block;
-  margin: 2rem 5% auto 2rem;
+  margin: 3rem 5% 5rem 2rem;
   width: 35%;
   height: auto;
 
@@ -119,9 +127,183 @@ padding: 0 2rem 0 0;
   font-size: 1rem;
   font-weight: bold;
   margin-right: 100%;
+  text-transform: uppercase;
 }
 .par {
   display: block;
 margin: 1rem auto 0 auto;
 width: auto;
 }
+/* TEXTBOXES-END */
+
+/* FOOTER */
+.footer {
+  background-color: azure;
+}
+.footer img {
+  height: 1.5rem;
+  margin: 4rem 1rem 4rem 4rem;
+  width: auto;
+  vertical-align: middle;
+}
+/* FOOTER-END */
+
+@media only screen and (max-width:1024px) {
+  .container {
+    width: auto;
+  }
+  /* HEADER */
+  .header {
+    background-color: cadetblue;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 3rem;
+  }
+  /* HEADER-END */
+  /* SLIDER */
+  .slider {
+    z-index: 1;
+    background-image: url("../img/glasses-bg.png");
+    background-size: cover;
+    width: auto;
+    height: 22rem;
+
+  }
+  .slogan {
+    background-color: white;
+    font-weight: bold;
+    font-size: 1.33;
+    margin: 5rem -2rem 0 0;
+    float: right;
+    padding: 1.75rem 4rem;
+    text-transform: uppercase;
+  }
+  /* SLIDER-END */
+}
+
+  @media only screen and (max-width: 610px) {
+    /* SLIDER */
+    .slider {
+      z-index: 1;
+      background-image: url("../img/glasses-bg.png");
+      background-size: cover;
+      width: auto;
+      height: 22rem;
+
+    }
+    .slogan {
+      background-color: white;
+      font-weight: bold;
+      font-size: 1rem;
+      margin: 9rem 0 0 0;
+      padding: 1rem 0rem;
+      text-transform: uppercase;
+      width: 100%;
+      text-align: center;
+    }
+    .slider .textlogo {
+      display: none;
+    }
+
+    .nav {
+      display: none;
+    }
+    .navm {
+      display: inline-block;
+      float: right;
+    }
+    /* SLIDER-END */
+
+    /* FEATURES */
+    .features {
+      margin: auto;
+      height: 8rem;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+
+    }
+    .features img, .features span {
+      margin: 0 3rem;
+
+      padding-top: 25px;
+      font-size: 0.77rem
+    }
+
+    .features-flex-container {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      margin: 3rem auto 0 auto;
+      width: 45%;
+      text-align: center;
+    }
+
+
+    .features #truck-t {
+      margin-left: 25rem;
+    }
+    .features #truck-t {
+      margin-left: 0rem;
+      margin-right: 4rem;
+    }
+    .features #paper{
+      height: auto;
+      width: 3.5rem;
+      padding-left: 1rem;
+    }
+    .features #ruler{
+      height: auto;
+      width: 5rem;
+    }
+    .features #truck{
+      height: auto;
+      width: 5rem;
+      margin-right: 3rem;
+    }
+    /* FEATURES-END */
+
+    /* TEXTBOXES */
+    .textbox-flex {
+     width: 100%;
+     display: block;
+    }
+
+    .textbox {
+      display: block;
+      margin: 3rem 5% 5rem 0;
+      width: 100%;
+      height: auto;
+
+    }
+    .title {
+      background-color: cadetblue;
+      padding: 0.5rem 50% 0.5rem 38%;
+      width: auto;
+      color: white;
+      font-size: 1rem;
+      font-weight: bold;
+      margin: auto;
+      text-align: center;
+    }
+    .par {
+      display: block;
+    margin: 1rem auto 0 auto;
+    width: auto;
+    font-size: 0.77rem;
+    }
+    /* TEXTBOXES-END */
+
+    /* FOOTER */
+    .copyrighttext {
+      display: none;
+    }
+    .footer img {
+      height: 1.5rem;
+      margin: 4rem 50% 4rem 38%;
+      width: auto;
+      vertical-align: middle;
+    }
+    /* FOOTER-END */
+
+  }
